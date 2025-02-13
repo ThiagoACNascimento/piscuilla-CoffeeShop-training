@@ -1,9 +1,9 @@
 body{
   font-family: Arial, Helvetica, sans-serif; /* font style */
   margin: 0;  /* body margin */
-  background-color: #4B2E2B; /* color background */
+  background-color: #69332c; /* color background */
   display: grid; /* display style */
-  gap: 60px; 
+  gap: 3.75rem; 
   justify-items: center; /* place itens in the center of the site */
   margin-top: 3.75rem;
 }
@@ -17,10 +17,11 @@ a{
   text-decoration: none;
   text-transform: uppercase;
   color: black;
+  font-weight: bold;
 }
 
 p, h1, h2, h3{
-  margin: 0px;
+  margin: 0rem;
 }
 
 header{
@@ -29,9 +30,31 @@ header{
   gap: 3.75rem;
 }
 
+footer{
+  background-color: rgb(169, 90, 58);
+  padding: 2.5rem;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
 p{
   font-size: 1.25rem;
   line-height: 1.3;
+}
+
+em{
+  color: lightgoldenrodyellow;
+}
+
+ .logo{
+  width: 18.75rem;
+  height: auto;
+  padding: 1.25rem;
+  background-color: #8f7651;
+  border-radius: 0.625rem;
+  border: 0.05rem solid black;
 }
 
 .content{
@@ -40,10 +63,16 @@ p{
   max-width: 62.5rem;
 }
 
+.content .info{
+  border-radius: 0.625rem 0 0 0;
+}
 
-.logo{
-  width: 18.75rem;
-  height: auto;
+.content .qualities{
+  border-radius: 0 0 0.625rem 0;
+}
+
+.content img{
+  border-radius: 0 0.625rem 0 0;
 }
 
 .menu{
@@ -58,14 +87,27 @@ p{
   display: block;
   background-color: #E3D5C0;
   padding: 0.9375rem 1.875rem;
+  border-radius: 0.625rem;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s ease;
+}
+
+a:hover{
+  color: white;
+  background-color: rgb(206, 135, 4);
+  transform: scale(1.2);
   border-radius: 10px;
+  border: 0.1rem solid black;
 }
 
 .info{
-  text-align: right;
-  background-color: rgba(212, 162, 118, 0.85); 
+  display: grid;
+  text-align: right; 
+  background-color: rgba(212, 162, 118, 0.85);
   padding: 2.5rem;
   position: relative;
+  gap: 1.25rem;
+  align-content: center;
+  justify-items: end;
 }
 
 .info::before{
@@ -84,6 +126,19 @@ p{
   background-color: #E3D5C0;
   padding: 0.9375rem 1.875rem;
   border-radius: 10px;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s ease;
+}
+
+.advantages{
+  display: grid;
+  text-align: end;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.advantages-text{
+  font-size: 3.75rem;
+  color: #906965;
 }
 
 .icon{
@@ -92,6 +147,41 @@ p{
 }
 
 .qualities{
-  background-color: rgba(212, 162, 118, 0.85); 
+  display: grid;
+  background-color: rgba(212, 162, 118, 0.85);
+  gap: 1.75rem; 
+  padding: 1.25rem;
 }
+
+.qualities div{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.5rem;
+  padding: 1rem;
+  border-radius: 0.625rem;
+  border: 0.2rem solid rgb(132, 87, 53);
+}
+
+.qualities div p{
+  grid-column: 2;
+}
+
+.qualities div h3{
+  display: grid;
+  text-align: start;
+  align-items: center;
+  padding-top: 0.15rem;
+}
+
+.coffee-icon, .user-icon{
+  background-color: rgba(233, 197, 165, 0.85);
+}
+
+.star-icon{
+  background-color: rgba(249, 174, 108, 0.85);
+}
+
+
+
+
 
