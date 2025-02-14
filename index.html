@@ -5,32 +5,37 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./style.css">
-  <title>Piscuilla Coffee</title>
+  <title>Pisquila Coffee</title>
 </head>
 
 <body>
 
   <header>
     <img class="logo" src="./img/pisquila_coffee_shop.svg" alt="logo">
-    <nav class="menu">
+    <nav aria-label="primary">
+      <ul class="menu">
         <li><a class="list" href="/">about</a></li>
         <li><a class="list" href="/">products</a></li>
         <li><a class="list" href="/">stores</a></li>
         <li><a class="list" href="/">contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <div class="content">
-      <div class="info">
-        <h1>Where Coffee Flows, Purrs Follow</h2>
-        <p>Enjoy the perfect blend of rich coffee and the gentle purrs of our feline friends. A cozy space to relax, unwind, and share moments with adorable kittens. ☕🐱✨</p>
-        <a class="more" href="/">see more</a>
-      </div>
-      
-      <img class="cat_coffee" src="./img/cat_coffee.webp" alt="cat_coffee">
 
-      <div class="advantages">
+    <article class="content" aria-labelledby="label-info">
+      <div class="info" id="label-info">
+        <h1>Where Coffee Flows, Purrs Follow</h2>
+          <p>Enjoy the perfect blend of rich coffee and the gentle purrs of our feline friends. A cozy space to relax, unwind, and share moments with adorable kittens. ☕🐱✨</p>
+          <a class="more" href="/">see more</a>
+      </div>
+
+      <img class="cat_coffee" src="./img/cat_coffee.webp" alt="cat_coffee">
+    </article>
+
+    <article class="content" aria-labelledby="label-advantages">
+      <div class="advantages" id="label-advantages">
         <h2 class="advantages-text">Much more than a coffee, <em>an experience!</em></h2>
       </div>
       <div class="qualities">
@@ -50,7 +55,7 @@
           <p>Whether for a special meeting or a relaxed conversation, every corner invites good company. Between coffees and smiles, unforgettable moments happen.</p>
         </div>
       </div>
-    </div>
+    </article>
   </main>
 
   <footer>
