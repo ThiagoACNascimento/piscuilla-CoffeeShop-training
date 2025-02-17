@@ -139,6 +139,12 @@ a:hover{
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s ease;
 }
 
+.cat_coffee{
+  height: 100%;
+  object-fit: cover;
+  object-position: top right;
+}
+
 .advantages{
   display: grid;
   text-align: end;
@@ -196,6 +202,64 @@ a:hover{
 .qualities div:nth-child(even){
   background-color: rgba(249, 174, 108, 0.85);
 }
+
+@media(max-width: 1000px){
+  .content-advantages{
+    grid-template-columns: 1fr;
+  }
+  .advantages{
+    border-right: 0.3rem solid rgba(212, 162, 118, 0.85);
+    border-bottom: none;
+    border-radius: 0;
+    text-align: center;
+  }
+  .content .advantages{
+    border-radius: 0rem;
+  }
+}
+
+@media(max-width: 600px){
+  .advantages{
+    font-size: 2rem;
+  }
+
+  .info{
+    text-align: start;
+    justify-items: start;
+  }
+
+  .info::before{
+    display: none;
+  }
+
+  .content{
+    grid-template-columns: 1fr;
+  }
+
+  .content .info{
+    border-radius: 0.625rem 0.625rem  0 0;;
+  }
+
+  .content .cat_coffee{
+    border-radius: 0rem;
+  }
+
+  .advantages{
+    border-top: 0.3rem solid rgba(212, 162, 118, 0.85);
+  }
+}
+
+@media(max-width: 450px){
+  .advantages-text{
+    font-size: 2rem;
+  }
+
+  .menu a{
+    text-align: center;
+    width: 89.787px;
+  }
+}
+
 
 
 
